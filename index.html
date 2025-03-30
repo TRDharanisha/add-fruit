@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fruit</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ba68f1, #5c7cd3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        
+        .container {
+            background: linear-gradient(135deg,  #ffe26f,#87dfe8);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        input {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            margin-top: 10px;
+            background: #87dfe8;
+            color: black;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+        input:focus{
+            background: rgba(81, 150, 228, 0.718);
+        }
+        input:hover {
+            background: rgba(81, 150, 228, 0.718);
+        }
+
+        button {
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 16px;
+            background: #bc67f0;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background: #a058e8;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enter a Fruit Name</h2>
+        <form action="http://localhost:3000/add" method="get">
+        <input type="text" name="item" placeholder="Enter fruit name">
+        <button>Add Fruit</button>
+        </form>
+    </div>
+
+</body>
+</html>
